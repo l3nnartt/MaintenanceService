@@ -1,0 +1,4 @@
+name: MaintenanceService
+main: com.github.l3nnartt.MaintenanceService
+version: 1.0
+author: Lennart
