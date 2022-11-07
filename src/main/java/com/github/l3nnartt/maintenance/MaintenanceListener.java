@@ -1,4 +1,4 @@
-package com.github.l3nnartt;
+package com.github.l3nnartt.maintenance;
 
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.ServerPing;
@@ -11,7 +11,8 @@ import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
 
 public class MaintenanceListener implements Listener {
-  //custom ping respond
+
+  // Custom ping respond
   @EventHandler
   public void onPing(ProxyPingEvent e) {
     ServerPing response = e.getResponse();
@@ -24,10 +25,9 @@ public class MaintenanceListener implements Listener {
     e.setResponse(response);
   }
 
-  //kick on join with maintenance message
+  // kick on join with maintenance message
   @EventHandler
   public void onJoin(PreLoginEvent e) {
-    e.getConnection().disconnect(new ComponentBuilder("We are currently under Maintenance").color(
-        ChatColor.RED).create());
+    e.getConnection().disconnect(new ComponentBuilder("We are currently under Maintenance").color(ChatColor.RED).create());
   }
 }

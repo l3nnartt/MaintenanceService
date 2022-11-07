@@ -1,4 +1,4 @@
 name: MaintenanceService
-main: com.github.l3nnartt.MaintenanceService
+main: com.github.l3nnartt.maintenance.MaintenanceService
 version: 1.0
-author: Lennart
+author: L3nnart_
